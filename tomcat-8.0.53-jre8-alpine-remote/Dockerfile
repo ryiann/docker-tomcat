@@ -8,4 +8,4 @@ ENV JPDA_TRANSPORT="dt_socket"
 # 容器运行时监听的端口
 EXPOSE 8080 8000
 # 启动时运行
-CMD ["catalina.sh", "jpda", "run"]
+ENTRYPOINT ["catalina.sh", "jpda", "run"]
